@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log in | Marc Jacob Water Station</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="login-wrap">
+  <section class="card login-card">
+    <a class="brand" href="index.html"><img src="images/logo.svg" alt=""><span>Marc Jacob<br>Water Station</span></a>
+    <h1>Log in</h1>
+    <p class="muted">Admins and customers log in here.</p>
+    <form id="login-form">
+      <label for="identifier">Email or username</label>
+      <input id="identifier" autocomplete="username" required>
+      <label for="password">Password</label>
+      <input id="password" type="password" autocomplete="current-password" required>
+      <p class="error" id="login-error" hidden></p>
+      <button class="btn btn-primary btn-block" style="margin-top:1.2rem">Log in</button>
+    </form>
+    <p class="form-link muted">New here? <a href="signup.html">Create an account</a></p>
+    <div class="demo">
+      <strong>Demo accounts</strong><br>
+      Admin: admin@marcjacob.com / admin123<br>
+      Customer: boy@example.com / customer123
+    </div>
+  </section>
+</main>
+<script src="js/data.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

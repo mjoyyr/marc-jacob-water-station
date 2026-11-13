@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign up | Marc Jacob Water Station</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="login-wrap">
+  <section class="card login-card">
+    <a class="brand" href="index.html"><img src="images/logo.svg" alt=""><span>Marc Jacob<br>Water Station</span></a>
+    <h1>Create an account</h1>
+    <p class="muted">Sign up to order water and track your delivery.</p>
+    <form id="signup-form" novalidate>
+      <label for="s-name">Full Name</label>
+      <input id="s-name" autocomplete="name" placeholder="Juan Dela Cruz" required>
+      <label for="s-contact">Contact Number</label>
+      <input id="s-contact" inputmode="tel" autocomplete="tel" placeholder="0917 123 4567" required>
+      <label for="s-address">Delivery Address</label>
+      <textarea id="s-address" autocomplete="street-address" placeholder="House no., street, barangay, city" required></textarea>
+      <label for="s-email">Email</label>
+      <input id="s-email" type="email" autocomplete="email" required>
+      <label for="s-password">Password (at least 6 characters)</label>
+      <input id="s-password" type="password" autocomplete="new-password" required>
+      <label for="s-confirm">Confirm Password</label>
+      <input id="s-confirm" type="password" autocomplete="new-password" required>
+      <p class="error" id="signup-error" hidden></p>
+      <button class="btn btn-primary btn-block" style="margin-top:1.2rem">Sign up</button>
+    </form>
+    <p class="form-link muted">Already have an account? <a href="login.html">Log in</a></p>
+  </section>
+</main>
+<script src="js/data.js"></script>
+<script src="js/signup.js"></script>
+</body>
+</html>
